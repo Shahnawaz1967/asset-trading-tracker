@@ -19,10 +19,10 @@ router.post('/:id', protect, updateAsset);
 // Publish Asset on Marketplace
 router.put('/:id/publish', protect, publishAsset);
 
-// Get Asset Details
+//Asset Details
 router.get('/:id', protect, getAssetDetails);
 
-// Get User's Assets
+// User's Assets
 router.get('/user/:id', protect, getUserAssets);
 
 export default router;

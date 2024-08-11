@@ -15,7 +15,6 @@ export const protect = async (req, res, next) => {
 
       // Find the user by ID and exclude the password field
       req.user = await User.findById(decoded.id).select('-password');
-
       // Call the next middleware or route handler
       next();
     } catch (error) {

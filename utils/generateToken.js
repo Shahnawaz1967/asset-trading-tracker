@@ -1,13 +1,12 @@
-// utils/jwt.js
 import jwt from 'jsonwebtoken';
 
-const SECRET_KEY = process.env.JWT_SECRET || 'your-secret-key'; // Ensure this key is kept secret and secure
+const SECRET_KEY = process.env.JWT_SECRET || 'your-secret-key'; 
 
-// Function to generate a JWT token
+//generating a JWT token
 export const generateToken = (userId) => {
     if (!userId) throw new Error('User ID is required to generate token');
     
-    const payload = { id: userId }; // Ensure this is a plain object
+    const payload = { id: userId };
     const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
   
     return token;

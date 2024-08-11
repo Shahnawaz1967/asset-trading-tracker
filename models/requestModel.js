@@ -6,7 +6,7 @@ const requestSchema = mongoose.Schema({
     ref: 'Asset',
     required: true
   },
-  requester: {
+  requester: { 
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
     required: true

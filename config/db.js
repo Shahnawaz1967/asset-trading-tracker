@@ -1,7 +1,3 @@
-// D2nYZ8p4Ofw5zwkd
-// ashahnawaz010
-// mongodb+srv://ashahnawaz010:D2nYZ8p4Ofw5zwkd@cluster0.stluo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-// config/db.js
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
